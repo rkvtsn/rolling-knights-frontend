@@ -1,0 +1,107 @@
+.icon {
+    padding: unset;
+    margin: unset;
+    font-size: normal;
+    display: inline-block;
+
+    &--small {
+        width: 49px;
+        height: 48px;
+    }
+
+    &--big {
+        width: 88px;
+        height: 82px;
+    }
+
+    &--medium {
+        width: 70px;
+        height: 69px
+    }
+}
+
+.i- {
+    &-bag {
+        background: url("./../../assets/imgs/bag.png")
+    }
+
+    &-apple {
+        background: url("./../../assets/imgs/apple.png")
+    }
+
+    &-build {
+        background: url("./../../assets/imgs/build.png")
+    }
+
+    &-coin {
+        background: url("./../../assets/imgs/coin.png")
+    }
+
+    &-combat {
+        background: url("./../../assets/imgs/combat.png")
+    }
+
+    &-event {
+        background: url("./../../assets/imgs/event.png")
+    }
+
+    &-flower {
+        background: url("./../../assets/imgs/flower.png")
+    }
+
+    &-glory {
+        background: url("./../../assets/imgs/glory.png")
+    }
+
+    &-grail {
+        background: url("./../../assets/imgs/grail.png")
+    }
+
+    &-house {
+        background: url("./../../assets/imgs/house.png")
+    }
+
+    &-joker {
+        background: url("./../../assets/imgs/joker.png")
+    }
+
+    &-required {
+        background: url("./../../assets/imgs/required.png")
+    }
+
+    &-reroll {
+        background: url("./../../assets/imgs/reroll.png")
+    }
+
+    &-smile {
+        background: url("./../../assets/imgs/smile.png")
+    }
+
+    &-tower {
+        background: url("./../../assets/imgs/tower.png")
+    }
+
+    &-tree {
+        background: url("./../../assets/imgs/tree.png")
+    }
+
+    &-wall {
+        background: url("./../../assets/imgs/wall.png")
+    }
+
+    &-warn {
+        background: url("./../../assets/imgs/warn.png")
+    }
+
+    &-wave {
+        background: url("./../../assets/imgs/wave.png")
+    }
+
+    &-wave_2 {
+        background: url("./../../assets/imgs/wave_2.png")
+    }
+
+    &-wheat {
+        background: url("./../../assets/imgs/wheat.png")
+    }
+}
