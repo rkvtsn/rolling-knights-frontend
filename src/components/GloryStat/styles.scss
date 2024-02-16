@@ -4,9 +4,16 @@
     display: flex;
 
     &>div {
+        vertical-align: bottom;
+        display: flex;
         border: 1px solid #000;
         width: 30px;
         height: 30px;
         padding: 0;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
