@@ -3,105 +3,109 @@
     margin: unset;
     font-size: normal;
     display: inline-block;
+    height: 100%;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 
     &--small {
-        width: 49px;
-        height: 48px;
+        max-width: 49px;
+        max-height: 48px;
     }
 
     &--big {
-        width: 88px;
-        height: 82px;
+        max-width: 88px;
+        max-height: 82px;
     }
 
     &--medium {
-        width: 70px;
-        height: 69px
+        max-width: 70px;
+        max-height: 69px
     }
 }
 
-.i- {
-    &-bag {
-        background: url("./../../assets/imgs/bag.png")
-    }
+.i-bag {
+    background-image: url("./../../assets/imgs/bag.png");
+}
 
-    &-apple {
-        background: url("./../../assets/imgs/apple.png")
-    }
+.i-apple {
+    background-image: url("./../../assets/imgs/apple.png");
+}
 
-    &-build {
-        background: url("./../../assets/imgs/build.png")
-    }
+.i-build {
+    background-image: url("./../../assets/imgs/build.png");
+}
 
-    &-coin {
-        background: url("./../../assets/imgs/coin.png")
-    }
+.i-coin {
+    background-image: url("./../../assets/imgs/coin.png");
+}
 
-    &-combat {
-        background: url("./../../assets/imgs/combat.png")
-    }
+.i-combat {
+    background-image: url("./../../assets/imgs/combat.png");
+}
 
-    &-event {
-        background: url("./../../assets/imgs/event.png")
-    }
+.i-event {
+    background-image: url("./../../assets/imgs/event.png");
+}
 
-    &-flower {
-        background: url("./../../assets/imgs/flower.png")
-    }
+.i-flower {
+    background-image: url("./../../assets/imgs/flower.png");
+}
 
-    &-glory {
-        background: url("./../../assets/imgs/glory.png")
-    }
+.i-glory {
+    background-image: url("./../../assets/imgs/glory.png");
+}
 
-    &-grail {
-        background: url("./../../assets/imgs/grail.png")
-    }
+.i-grail {
+    background-image: url("./../../assets/imgs/grail.png");
+}
 
-    &-house {
-        background: url("./../../assets/imgs/house.png")
-    }
+.i-house {
+    background-image: url("./../../assets/imgs/house.png");
+}
 
-    &-joker {
-        background: url("./../../assets/imgs/joker.png")
-    }
+.i-joker {
+    background-image: url("./../../assets/imgs/joker.png");
+}
 
-    &-required {
-        background: url("./../../assets/imgs/required.png")
-    }
+.i-required {
+    background-image: url("./../../assets/imgs/required.png");
+}
 
-    &-reroll {
-        background: url("./../../assets/imgs/reroll.png")
-    }
+.i-reroll {
+    background-image: url("./../../assets/imgs/reroll.png");
+}
 
-    &-smile {
-        background: url("./../../assets/imgs/smile.png")
-    }
+.i-smile {
+    background-image: url("./../../assets/imgs/smile.png");
+}
 
-    &-tower {
-        background: url("./../../assets/imgs/tower.png")
-    }
+.i-tower {
+    background-image: url("./../../assets/imgs/tower.png");
+}
 
-    &-tree {
-        background: url("./../../assets/imgs/tree.png")
-    }
+.i-tree {
+    background-image: url("./../../assets/imgs/tree.png");
+}
 
-    &-wall {
-        background: url("./../../assets/imgs/wall.png")
-    }
+.i-wall {
+    background-image: url("./../../assets/imgs/wall.png");
+}
 
-    &-warn {
-        background: url("./../../assets/imgs/warn.png")
-    }
+.i-warn {
+    background-image: url("./../../assets/imgs/warn.png");
+}
 
-    &-wave {
-        background: url("./../../assets/imgs/wave.png")
-    }
+.i-wave {
+    background-image: url("./../../assets/imgs/wave.png");
+}
 
-    &-wave_2 {
-        background: url("./../../assets/imgs/wave_2.png")
-    }
+.i-wave_2 {
+    background-image: url("./../../assets/imgs/wave_2.png");
+}
 
-    &-wheat {
-        background: url("./../../assets/imgs/wheat.png")
-    }
+.i-wheat {
+    background-image: url("./../../assets/imgs/wheat.png");
 }
