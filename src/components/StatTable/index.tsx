@@ -1,15 +1,16 @@
-import Icon from "../Icon";
-import { IconType } from "../Icon/IconType";
 import { ValueProps } from "src/types/ValueProp";
 import { StatTableItem } from "src/types/StatTableItem";
+import { WithChildrenProps } from "src/types/ChildrenProps";
 import "./styles.scss";
 
-const StatTable = ({ icon, data, value }: StatTableProps) => {
+const StatTable = ({
+  data,
+  value,
+  children,
+}: WithChildrenProps<StatTableProps>) => {
   return (
     <div className="stat-table">
-      <div className="stat-table__icon">
-        <Icon icon={icon} />
-      </div>
+      <div className="stat-table__icon">{children}</div>
       {data.map(({ value: val, node }) => (
         <div
           key={val}
@@ -27,6 +28,5 @@ const StatTable = ({ icon, data, value }: StatTableProps) => {
 export default StatTable;
 
 interface StatTableProps extends ValueProps<number> {
-  icon: IconType;
   data: StatTableItem[];
 }
