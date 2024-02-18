@@ -29,5 +29,4 @@ export default StatTable;
 interface StatTableProps extends ValueProps<number> {
   icon: IconType;
   data: StatTableItem[];
-  hasTitles: boolean;
 }
