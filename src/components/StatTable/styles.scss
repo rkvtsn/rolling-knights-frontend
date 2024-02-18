@@ -1,12 +1,18 @@
-.glory-stat {
+.stat-table {
     background-color: #fff;
-    height: 30px;
     display: flex;
 
-    .glory-stat__cell {
+    &__icon {
+        width: 30px;
+        height: 30px;
+        border-right: 1px solid #ccc;
+    }
+
+    &__cell {
         vertical-align: bottom;
         display: flex;
-        border: 1px solid #000;
+        border: 1px solid #ccc;
+        border-left: none;
         width: 30px;
         height: 30px;
         padding: 0;
@@ -17,7 +23,7 @@
         align-items: center;
 
         &--active {
-            background-color: #000;
+            border: 1px solid #000;
         }
     }
 

@@ -1,12 +1,5 @@
+import { StatsState } from "src/types/StatsState";
 import { STAT_HAPPY_START } from "./stat";
-
-export interface StatsState {
-  glory: number;
-  happy: number;
-  str: number;
-  agi: number;
-  int: number;
-}
 
 export const DEFAULT_STATS: StatsState = {
   glory: 0,
