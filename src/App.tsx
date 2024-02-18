@@ -9,7 +9,6 @@ function App() {
 
   return (
     <>
-      <div>HELLo</div>
       <GloryStat value={stats.glory} />
       <HappyStat value={stats.happy} />
     </>
