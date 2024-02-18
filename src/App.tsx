@@ -1,16 +1,16 @@
 import { useState } from "react";
 import "./App.css";
-import GloryStat from "./components/GloryStat";
+import StatGlory from "./components/StatGlory";
+import StatHappy from "./components/StatHappy";
 import { DEFAULT_STATS } from "./constants/defaultStats";
-import HappyStat from "./components/HappyStat";
 
 function App() {
   const [stats, setStats] = useState(DEFAULT_STATS);
 
   return (
     <>
-      <GloryStat value={stats.glory} />
-      <HappyStat value={stats.happy} />
+      <StatGlory value={stats.glory} />
+      <StatHappy value={stats.happy} />
     </>
   );
 }
