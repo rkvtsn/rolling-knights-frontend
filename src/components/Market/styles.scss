@@ -1,0 +1,26 @@
+.market {
+    h2 {
+        text-align: center;
+    }
+
+    &__items {
+        display: flex;
+        gap: 20px;
+
+        ul {
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+
+            li {
+                display: block;
+                padding: 0;
+                margin: 0;
+                flex: 1;
+            }
+
+        }
+    }
+}
