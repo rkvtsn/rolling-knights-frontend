@@ -1,4 +1,4 @@
-import { BagState } from "../domains/BagState";
+import { BagState } from "./BagState";
 import { SkillModType } from "../domains/Skill";
 
 export interface PlayerState {

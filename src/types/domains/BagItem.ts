@@ -10,4 +10,5 @@ export interface BagItem {
   name: string;
   type: BagItemType;
   level: BagItemLevel;
+  schema: number[][]
 }

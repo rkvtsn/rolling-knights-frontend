@@ -1,8 +1,8 @@
 .cell {
     vertical-align: bottom;
     display: flex;
-    border: 2px solid #000;
-    border-radius: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     width: 25px;
     height: 25px;
     padding: 0;
@@ -13,6 +13,6 @@
     align-items: center;
 
     &--noborder {
-        border: 2px solid transparent;
+        border-color: transparent;
     }
 }

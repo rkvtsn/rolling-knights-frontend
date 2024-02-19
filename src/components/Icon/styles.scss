@@ -3,12 +3,20 @@
     margin: unset;
     font-size: normal;
     display: inline-block;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
+    min-height: 25px;
+    min-width: 25px;
+    vertical-align: middle;
 
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+    &--cell {
+        max-height: 25px;
+        max-width: 25px;
+    }
 
     &--small {
         max-width: 49px;
@@ -27,85 +35,85 @@
 }
 
 .i-bag {
-    background-image: url("./../../assets/imgs/bag.png");
+    content: url("./../../assets/imgs/bag.png");
 }
 
 .i-apple {
-    background-image: url("./../../assets/imgs/apple.png");
+    content: url("./../../assets/imgs/apple.png");
 }
 
 .i-build {
-    background-image: url("./../../assets/imgs/build.png");
+    content: url("./../../assets/imgs/build.png");
 }
 
 .i-coin {
-    background-image: url("./../../assets/imgs/coin.png");
+    content: url("./../../assets/imgs/coin.png");
 }
 
 .i-combat {
-    background-image: url("./../../assets/imgs/combat.png");
+    content: url("./../../assets/imgs/combat.png");
 }
 
 .i-event {
-    background-image: url("./../../assets/imgs/event.png");
+    content: url("./../../assets/imgs/event.png");
 }
 
 .i-flower {
-    background-image: url("./../../assets/imgs/flower.png");
+    content: url("./../../assets/imgs/flower.png");
 }
 
 .i-glory {
-    background-image: url("./../../assets/imgs/glory.png");
+    content: url("./../../assets/imgs/glory.png");
 }
 
 .i-grail {
-    background-image: url("./../../assets/imgs/grail.png");
+    content: url("./../../assets/imgs/grail.png");
 }
 
 .i-house {
-    background-image: url("./../../assets/imgs/house.png");
+    content: url("./../../assets/imgs/house.png");
 }
 
 .i-joker {
-    background-image: url("./../../assets/imgs/joker.png");
+    content: url("./../../assets/imgs/joker.png");
 }
 
 .i-required {
-    background-image: url("./../../assets/imgs/required.png");
+    content: url("./../../assets/imgs/required.png");
 }
 
 .i-reroll {
-    background-image: url("./../../assets/imgs/reroll.png");
+    content: url("./../../assets/imgs/reroll.png");
 }
 
 .i-smile {
-    background-image: url("./../../assets/imgs/smile.png");
+    content: url("./../../assets/imgs/smile.png");
 }
 
 .i-tower {
-    background-image: url("./../../assets/imgs/tower.png");
+    content: url("./../../assets/imgs/tower.png");
 }
 
 .i-tree {
-    background-image: url("./../../assets/imgs/tree.png");
+    content: url("./../../assets/imgs/tree.png");
 }
 
 .i-wall {
-    background-image: url("./../../assets/imgs/wall.png");
+    content: url("./../../assets/imgs/wall.png");
 }
 
 .i-warn {
-    background-image: url("./../../assets/imgs/warn.png");
+    content: url("./../../assets/imgs/warn.png");
 }
 
 .i-wave {
-    background-image: url("./../../assets/imgs/wave.png");
+    content: url("./../../assets/imgs/wave.png");
 }
 
 .i-wave_2 {
-    background-image: url("./../../assets/imgs/wave_2.png");
+    content: url("./../../assets/imgs/wave_2.png");
 }
 
 .i-wheat {
-    background-image: url("./../../assets/imgs/wheat.png");
+    content: url("./../../assets/imgs/wheat.png");
 }

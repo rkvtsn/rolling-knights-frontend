@@ -1,52 +1,41 @@
-import MarketItem from "./MarketItem";
-import { ITEM_B1, ITEM_B2, ITEM_B3 } from "./constants/itemsAgi";
-import { ITEM_C1, ITEM_C2, ITEM_C3 } from "./constants/itemsInt";
-import { ITEM_A1, ITEM_A2, ITEM_A3 } from "./constants/itemsStr";
+import { useMemo } from "react";
+import { BagItemType } from "src/types/domains/BagItem";
+import { useBag } from "src/hooks/useBag";
+import MarketDisplay from "./MarketDisplay";
+import { ITEMS } from "./constants/items";
+import { MarketItem } from "./types";
+import { findClustersInBag } from "./utils/findClustersInBag";
 import "./styles.scss";
 
 const Market = () => {
+  const { bag } = useBag();
+
+  const itemGroups = useMemo(() => {
+    const groups = new Map<BagItemType, MarketItem[]>();
+    const gridHeaps = findClustersInBag(bag.grid);
+    console.log(gridHeaps);
+
+    for (const item of ITEMS) {
+      const isAvailable = false;
+
+      groups.set(item.type, [
+        ...(groups.get(item.type) ?? []),
+        {
+          ...item,
+          isAvailable,
+        },
+      ]);
+    }
+    return groups;
+  }, [bag.grid]);
+
   return (
     <div className="market">
       <h2>Market</h2>
       <div className="market__items">
-        <ul>
-          <li>
-            A1
-            <MarketItem schema={ITEM_A1} />
-          </li>
-          <li>
-            B1
-            <MarketItem schema={ITEM_B1} />
-          </li>
-          <li>
-            C1
-            <MarketItem schema={ITEM_C1} />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            A2
-            <MarketItem schema={ITEM_A2} />
-          </li>
-          <li>
-            B2
-            <MarketItem schema={ITEM_B2} />
-          </li>
-          <li>
-            C2 <MarketItem schema={ITEM_C2} />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            A3 <MarketItem schema={ITEM_A3} />
-          </li>
-          <li>
-            B3 <MarketItem schema={ITEM_B3} />
-          </li>
-          <li>
-            C3 <MarketItem schema={ITEM_C3} />
-          </li>
-        </ul>
+        <MarketDisplay value={itemGroups.get(BagItemType.A) ?? []} />
+        <MarketDisplay value={itemGroups.get(BagItemType.B) ?? []} />
+        <MarketDisplay value={itemGroups.get(BagItemType.C) ?? []} />
       </div>
     </div>
   );

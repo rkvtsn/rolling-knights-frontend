@@ -1,0 +1,13 @@
+.bag {
+    &__table {
+        width: fit-content;
+        margin: auto;
+
+        &--active {
+            .cell:hover {
+                border-color: #646cff;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,15 +1,14 @@
-import { useState } from "react";
 import "./App.css";
 import Market from "./components/Market";
-import { DEFAULT_STATS } from "./constants/defaultStats";
+import Bag from "./components/Bag";
+import { PlayerProvider } from "./contexts/PlayerContext";
 
 function App() {
-  const [stats, setStats] = useState(DEFAULT_STATS);
-
   return (
-    <>
+    <PlayerProvider>
+      <Bag />
       <Market />
-    </>
+    </PlayerProvider>
   );
 }
 

@@ -1,6 +1,5 @@
-import { IconType } from "../Icon/IconType";
+import { BagItem } from "src/types/domains/BagItem";
 
-export interface CellSchema {
-  color?: string;
-  icon?: IconType;
+export interface MarketItem extends BagItem {
+  isAvailable?: boolean;
 }

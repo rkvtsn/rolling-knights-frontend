@@ -1,11 +1,36 @@
+import { useMemo } from "react";
 import { ChildrenProps } from "src/types/ChildrenProps";
 import "./styles.scss";
 
-const Cell = ({ children, noborder = false, color, className }: CellProps) => {
+const Cell = ({
+  children,
+  onClick,
+  noborder = false,
+  color,
+  className,
+  row,
+  col,
+  value,
+}: CellProps) => {
+  const classNames = useMemo(() => {
+    const classNames = ["cell"];
+    if (noborder) {
+      classNames.push("cell--noborder");
+    }
+    if (className?.length) {
+      classNames.push(className);
+    }
+    return classNames;
+  }, [className, noborder]);
+
   return (
     <div
+      data-row={row}
+      data-col={col}
+      data-value={value}
+      onClick={onClick}
       style={{ color }}
-      className={`cell ${noborder ? "cell--noborder" : ""} ${className}`}
+      className={classNames.join(" ")}
     >
       {children}
     </div>
@@ -19,4 +44,8 @@ interface CellProps extends ChildrenProps {
   color?: string;
   className?: string;
   noborder?: boolean;
+  onClick?: () => void;
+  row?: number;
+  col?: number;
+  value?: number;
 }
