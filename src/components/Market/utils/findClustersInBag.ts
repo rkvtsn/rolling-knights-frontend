@@ -1,16 +1,28 @@
-export const findClustersInBag = (grid: number[][]): boolean => {
+import { Coordinate } from "src/types/Coordinate";
+
+/**
+ * Helps to find clusters of coins in the bag
+ * to define available items from the market
+ * @param {number[][]} grid - cells of bag
+ * @returns {} clusters of coins
+ */
+export const findClustersInBag = (grid: number[][]): Coordinate[][] => {
   const visited = new Set();
   const DIRS = [
     [0, 1],
     [1, 0],
     [-1, 0],
     [0, -1],
+    [1, 1],
+    [-1, -1],
+    [-1, 1],
+    [1, -1],
   ];
 
   const ROWS = grid.length;
   const COLS = grid[0].length;
 
-  const clusters: { row: number; col: number }[][] = [];
+  const clusters: Coordinate[][] = [];
   let clusterIndex = 0;
 
   const bfs = (row: number, col: number, index: number) => {
@@ -25,7 +37,6 @@ export const findClustersInBag = (grid: number[][]): boolean => {
         const c = col + dir[0];
         const r = row + dir[1];
 
-        console.log("dir", { c, r });
         if (
           r >= 0 &&
           r < ROWS &&
@@ -50,6 +61,6 @@ export const findClustersInBag = (grid: number[][]): boolean => {
       }
     }
   }
-  // @TODO
-  return false;
+
+  return clusters;
 };

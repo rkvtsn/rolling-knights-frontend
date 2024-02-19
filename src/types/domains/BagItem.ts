@@ -4,11 +4,9 @@ export enum BagItemType {
   C = "C",
 }
 
-export type BagItemLevel = 1 | 2 | 3;
-
 export interface BagItem {
   name: string;
   type: BagItemType;
-  level: BagItemLevel;
-  schema: number[][]
+  level: 1 | 2 | 3;
+  schema: number[][];
 }
